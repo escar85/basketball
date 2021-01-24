@@ -5,6 +5,10 @@ $border: 1px solid;
   font-family: Tahoma, sans-serif;
   font-size: 12px;
   font-weight: bold;
+
+  @media (max-width: 610px) {
+    font-size: 10px;
+  }
 }
 
 .main {
@@ -26,6 +30,10 @@ $border: 1px solid;
       line-height: 22px;
       height: 22px;
       padding-left: 5px;
+
+      @media (max-width: 610px) {
+        font-size: 10px;
+      }
     }
 
     &-date {
@@ -45,6 +53,11 @@ $border: 1px solid;
       display: grid;
       height: 18px;
       grid-template-columns: 30px 50px 170px 32px 32px 38px 32px 38px 32px 32px 43px 32px 34px;
+
+      @media (max-width: 610px) {
+        height: 16px;
+        grid-template-columns: 24px 42px 146px 28px 28px 34px 28px 34px 28px 28px 38px 28px 30px;
+      }
     }
 
     &-cell {
