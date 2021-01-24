@@ -1,0 +1,77 @@
+$main-color: #941f2c;
+$border: 1px solid;
+
+.root {
+  font-family: Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.main {
+  color: white;
+  width: fit-content;
+  margin: 200px auto 0;
+
+  &__table {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff8a4c;
+
+    &-title {
+      margin: 0;
+      border: $border white;
+      background-color: $main-color;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 22px;
+      height: 22px;
+      padding-left: 5px;
+    }
+
+    &-date {
+      font-weight: bold;
+      line-height: 14px;
+      padding-left: 5px;
+      border: $border $main-color;
+      color: $main-color;
+      background-color: white;
+      margin: 0;
+    }
+
+    &-row {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      height: 18px;
+      grid-template-columns: 30px 50px 170px 32px 32px 38px 32px 38px 32px 32px 43px 32px 34px;
+    }
+
+    &-cell {
+      border: $border $main-color;
+      text-align: center;
+
+      &:first-of-type {
+        color: $main-color;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.theme_light {
+  background-color: #fff2c5;
+  color: $main-color;
+  font-weight: normal;
+}
+
+.theme_medium {
+  background-color: #ffdecf;
+  color: $main-color;
+}
+
+.cell_with_text {
+  font-weight: normal;
+  text-align: start;
+  padding-left: 3px;
+}
